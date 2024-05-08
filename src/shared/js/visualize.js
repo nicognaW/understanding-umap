@@ -13,6 +13,7 @@
   limitations under the License.
   ==============================================================================*/
 
+import * as d3 from "d3";
 const pointsCache = new Map();
 export function getPoints(demo, params) {
   if (!params) {
