@@ -13,6 +13,7 @@
   limitations under the License.
   ==============================================================================*/
 
+import * as d3 from "d3";
 import { visualize } from "./visualize";
 import { UMAP } from "umap-js";
 import { Point } from "./generators";
