@@ -170,7 +170,6 @@
     color: white;
     width: 25%;
     margin-right: 5%;
-    padding-top: 25%;
     padding-bottom: 0;
     border: none;
     float: left;
@@ -259,16 +258,16 @@
       <div class="play-controls">
         <button class="play-pause" on:click={playPause} disabled={isFinished}>
           {#if isRunning}
-            <i class="material-icons">pause</i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M14 19h4V5h-4M6 19h4V5H6z"/></svg>
           {:else}
-            <i class="material-icons">play_arrow</i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.14v14l11-7z"/></svg>
           {/if}
         </button>
         <button
           class="restart"
           on:click={restart}
           disabled={isRunning || step === 0}>
-          <i class="material-icons">refresh</i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4l-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg>
         </button>
         <div class="steps-display">
           Step
